@@ -6,16 +6,15 @@
 - [Usage](#usage)
 - [Module Inputs](#module-inputs)
 - [Module Outputs](#module-outputs)
-- [Examples](#examples)
+- [Example](#example)
 - [License](#license)
 
 ## Introduction
-This Terraform module is designed to provision AWS resources using the AWS provider. It includes the creation of a Virtual Private Cloud (VPC), public subnets, IAM roles, and EC2 instances. This module facilitates infrastructure as code (IaC) for AWS environments.
+This module is basically combination of Terraform open source and includes automatation tests and examples. It also helps to create and improve your infrastructure with minimalistic code instead of maintaining the whole infrastructure code yourself.
 
 ## Usage
 To use this module, you should have Terraform installed and configured for AWS. This module provides the necessary Terraform configuration for creating AWS resources, and you can customize the inputs as needed. Below is an example of how to use this module:
 # Example
-#  example
 
 ```hcl
 module "lightsail" {
@@ -43,7 +42,6 @@ module "lightsail" {
   ]
 }
 ```
-## Example
 
 This example demonstrates how to create various AWS resources using the provided modules. Adjust the input values to suit your specific requirements.
 
@@ -59,7 +57,7 @@ This example demonstrates how to create various AWS resources using the provided
 - `created_at`:The timestamp when the bucket was created.
 - Other relevant security group outputs (modify as needed).
 
-## Examples
+## Example
 You can find more usage examples and configurations in the source code of each module, which are available
 
 ## License
