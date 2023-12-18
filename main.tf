@@ -11,8 +11,7 @@ module "labels" {
 }
 
 resource "aws_lightsail_instance" "instance" {
-  count = var.instance_enabled ? var.instance_count : 0
-
+  count             = var.instance_enabled ? var.instance_count : 0
   name              = format("%s%s%s", module.labels.id, "-", (count.index))
   availability_zone = var.availability_zone
   blueprint_id      = var.blueprint_id

@@ -58,7 +58,7 @@ This example demonstrates how to create various AWS resources using the provided
 - Other relevant security group outputs (modify as needed).
 
 ## Example
-You can find more usage examples and configurations in the source code of each module, which are available
+You can find more usage examples and configurations in the [examples](https://github.com/cypik/terraform-aws-lightsail/tree/master/example) source code of each module, which are available
 
 ## License
 This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-aws-lightsail/blob/master/LICENSE) file for more details.

@@ -22,7 +22,6 @@ variable "repository" {
   description = "Terraform current module repo"
 }
 
-
 variable "name" {
   type        = string
   default     = ""
@@ -61,7 +60,6 @@ variable "bundle_id" {
   description = "The bundle of specification information"
   sensitive   = true
 }
-
 
 variable "use_default_key_pair" {
   type        = bool
