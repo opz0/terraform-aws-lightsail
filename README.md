@@ -18,7 +18,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 
 ```hcl
 module "lightsail" {
-  source      = "git::https://github.com/opz0/terraform-aws-lightsail.git?ref=v1.0.0"
+  source      = "git::https://github.com/cypik/terraform-aws-lightsail.git?ref=v1.0.0"
 
   environment = "test"
   name        = "lightsail"
@@ -58,10 +58,10 @@ This example demonstrates how to create various AWS resources using the provided
 - Other relevant security group outputs (modify as needed).
 
 ## Example
-You can find more usage examples and configurations in the source code of each module, which are available
+You can find more usage examples and configurations in the [examples](https://github.com/cypik/terraform-aws-lightsail/tree/master/example) source code of each module, which are available
 
 ## License
-This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/opz0/terraform-aws-lightsail/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the '[License Name]' License. Please see the [LICENSE](https://github.com/cypik/terraform-aws-lightsail/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name

@@ -1,8 +1,7 @@
 
 
 module "labels" {
-  source = "git::https://github.com/opz0/terraform-aws-labels.git?ref=v1.0.0"
-
+  source      = "git::https://github.com/cypik/terraform-aws-labels.git?ref=v1.0.0"
   name        = var.name
   repository  = var.repository
   environment = var.environment
@@ -12,8 +11,7 @@ module "labels" {
 }
 
 resource "aws_lightsail_instance" "instance" {
-  count = var.instance_enabled ? var.instance_count : 0
-
+  count             = var.instance_enabled ? var.instance_count : 0
   name              = format("%s%s%s", module.labels.id, "-", (count.index))
   availability_zone = var.availability_zone
   blueprint_id      = var.blueprint_id

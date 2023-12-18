@@ -6,7 +6,7 @@ variable "environment" {
 
 variable "label_order" {
   type        = list(any)
-  default     = []
+  default     = ["name", "environment"]
   description = "Label order, e.g. `name`,`application`."
 }
 
@@ -18,10 +18,9 @@ variable "delimiter" {
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/Opz0/terraform-aws-lightsail"
+  default     = "https://github.com/cypik/terraform-aws-lightsail"
   description = "Terraform current module repo"
 }
-
 
 variable "name" {
   type        = string
@@ -31,8 +30,8 @@ variable "name" {
 
 variable "managedby" {
   type        = string
-  default     = ""
-  description = "ManagedBy, eg 'Opz0'."
+  default     = "cypik"
+  description = "ManagedBy, eg 'cypik'."
 }
 
 variable "attributes" {
@@ -61,7 +60,6 @@ variable "bundle_id" {
   description = "The bundle of specification information"
   sensitive   = true
 }
-
 
 variable "use_default_key_pair" {
   type        = bool
